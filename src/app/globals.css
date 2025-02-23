@@ -1,6 +1,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #8F6C52;    
+  --secondary: #3A475F;  
+  --accent: #4B7644;   
+  --background: #fdf7f2;
+  --photo-background: #f8f7f4;
+  --text: #15233C;
+  --header-height: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +21,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
