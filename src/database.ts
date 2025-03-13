@@ -9,7 +9,7 @@ export const getDatabaseConnection = () => {
     return db;
   } else {
     db = pg({
-      host: "postgres", // Use the Docker service name as the hostname
+      host: "localhost", // Use the Docker service name as the hostname
       port: 5432,
       database: "mydatabase",
       user: "myuser",
