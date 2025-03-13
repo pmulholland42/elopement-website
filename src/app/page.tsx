@@ -12,29 +12,6 @@ export default function Home() {
   return (
     <div>
       <main className={styles.main}>
-        <div className={styles["menu-header-container"]}>
-          <div className={styles["menu-header"]}>
-            <div className={styles["home-link"]}>
-              <Link href="/#home" className={styles["menu-header-link"]}>
-                HOME
-              </Link>
-            </div>
-
-            <Link href="/#whenandwhere" className={styles["menu-header-link"]}>
-              WHEN & WHERE
-            </Link>
-            <Link href="#faqs" className={styles["menu-header-link"]}>
-              FAQS
-            </Link>
-            <Link href="#aboutus" className={styles["menu-header-link"]}>
-              ABOUT US
-            </Link>
-
-            <Link href="/rsvp" className={styles["menu-header-link"]}>
-              RSVP
-            </Link>
-          </div>
-        </div>
         <section id="home" className={styles["home-section"]}>
           <div className={styles["main-header"]}>
             <h1 className={styles["main-header-title"]}>Peter & Riley</h1>
@@ -61,7 +38,7 @@ export default function Home() {
 
               <div className={styles["icon-text-container"]}>
                 <FontAwesomeIcon icon={faClock} className="fa-fw" size="xl" />
-                <p>X:00 PM</p>
+                <p>6:00 PM</p>
               </div>
               <div className={styles["icon-text-container"]}>
                 <FontAwesomeIcon
@@ -83,7 +60,11 @@ export default function Home() {
             ></iframe>
           </div>
         </section>
-        <section id="faqs" className={styles["content-section"]}>
+        <section
+          id="faqs"
+          className={styles["content-section"]}
+          style={{ marginBottom: "4rem" }}
+        >
           <div className={styles["section-container"]}>
             <h2>Frequently Asked Questions</h2>
             <dl>
@@ -115,26 +96,16 @@ export default function Home() {
               </dd>
 
               <dt className={styles["faq-question"]}>
-                Will there be a cookie table
+                Will there be a cookie table?
               </dt>
               <dd className={styles["faq-answer"]}>
-                Yes! Bring cookies if you want. Or dont, idc
+                Yes! If you want to bring cookies, please{" "}
+                <Link href="/cookies" style={{ textDecoration: "underline" }}>
+                  click here
+                </Link>{" "}
+                and let us know
               </dd>
             </dl>
-          </div>
-        </section>
-        <section id="aboutus" className={styles["content-section"]}>
-          <div className={styles["section-container"]}>
-            <h2>About us</h2>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
           </div>
         </section>
       </main>

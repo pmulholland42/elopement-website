@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Website//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:20250614T220000Z-PhippsConservatory@yourdomain.com
+DTSTAMP:20250301T120000Z
+DTSTART:20250614T220000Z
+DTEND:20250615T030000Z
+SUMMARY:Riley & Peter's Elopement Celebration
+DESCRIPTION:Join us to celebrate!
+LOCATION:Phipps Conservatory and Botanical Gardens, 1 Schenley Drive, Pittsburgh, PA 15213
+END:VEVENT
+END:VCALENDAR

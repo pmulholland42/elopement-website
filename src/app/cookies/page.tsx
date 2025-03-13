@@ -1,13 +1,13 @@
 import { Suspense } from "react";
-import styles from "./rsvp.module.css";
-import RSVPFlow from "./RSVPFlow";
+import styles from "./cookies.module.css";
+import CookiesForm from "./CookiesForm";
 
-export default function RSVPPage() {
+export default async function CookiesPage() {
   return (
     <div>
       <main className={styles.main}>
         <Suspense>
-          <RSVPFlow />
+          <CookiesForm />
         </Suspense>
       </main>
     </div>

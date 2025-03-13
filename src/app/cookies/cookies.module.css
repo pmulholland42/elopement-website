@@ -1,0 +1,81 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--header-height));
+    width: 100vw;
+    margin-top: var(--header-height);
+}
+
+@media only screen and (max-device-width: 480px) {
+    .main {
+
+        justify-content: flex-start;
+
+    }
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 1000px;
+    gap:1rem;
+  }
+
+  .section-container-lite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 0 1rem 0 1rem;
+    max-width: 1000px;
+    gap:1rem;
+  }
+
+  .instructions {
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .instructions-small {
+    font-size: 1.1rem;
+    font-family: 'Lora', serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .text {
+    font-family: 'Lora', serif;
+  }
+
+  .icon-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Lora', serif;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    font-family: 'Lora', serif;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+  .title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }

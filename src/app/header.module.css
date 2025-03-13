@@ -1,0 +1,38 @@
+.menu-header-container {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    z-index: 10;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    min-width: 50rem;
+}
+
+.menu-header-link {
+    color: white;
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .menu-header {
+    width: 100%;
+    min-width: 100vw;
+  }
+
+  .menu-header-link {
+    font-size: 0.8rem;
+  }
+}
+  
